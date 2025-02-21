@@ -10,7 +10,7 @@ import {
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen flex flex-col items-center text-gray-900 dark:text-white  max-h-screen px-4">
+    <div className="relative  min-h-screen max-h-dvh flex flex-col items-center text-gray-900 dark:text-white   px-4">
       {/* Header */}
       <header className="flex flex-col items-center justify-center py-2 md:py-6 md:my-10">
         <Image
@@ -86,7 +86,7 @@ export default function Home() {
       </section>
 
       {/* Footer con reproductor */}
-      <footer className="w-full fixed bottom-0  p-4 flex flex-col items-center text-center">
+      <footer className="w-full  bottom-0  p-4 flex flex-col items-center text-center">
         <LiveAudioPlayer />
         <p className="text-xs mt-3">
           © 2025 El Vitrola de Chile. Todos los derechos reservados. Powered by{" "}
