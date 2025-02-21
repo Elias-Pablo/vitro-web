@@ -22,7 +22,7 @@ export default function Home() {
       </header>
 
       {/* Sección de información */}
-      <section className="max-w-3xl text-center space-y-2 lg:text-base text-xs  md:space-y-4 flex flex-col items-center justify-center">
+      <section className="max-w-3xl text-center space-y-1 lg:text-base text-xs  md:space-y-4 flex flex-col items-center justify-center">
         <h2 className="text-2xl font-bold ">
           El locutor número uno de la Región de O'higgins.
         </h2>
@@ -87,10 +87,6 @@ export default function Home() {
 
       {/* Footer con reproductor */}
       <footer className="w-full fixed bottom-0  p-4 flex flex-col items-center text-center">
-        <h1 className="font-extrabold text-lg animate-bounce">
-          ⬇ Dale Play a la señal EN VIVO ⬇
-        </h1>
-
         <LiveAudioPlayer />
         <p className="text-xs mt-3">
           © 2025 El Vitrola de Chile. Todos los derechos reservados. Powered by{" "}

@@ -3,12 +3,49 @@
 import { useState } from "react";
 import AudioPlayer, { RHAP_UI } from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
+import Image from "next/image";
 
 export default function LiveAudioPlayer() {
   const [isPlaying, setIsPlaying] = useState(false);
 
   return (
     <div className="w-full max-w-4xl flex flex-col items-center">
+      {/* Texto dinámico */}
+      <h1 className="font-extrabold text-sm animate-bounce text-center">
+        {isPlaying ? (
+          <>
+            🎶 Estás escuchando la transmisión en vivo de{" "}
+            <span className="text-yellow-400">"El Vitrola" 📻</span> 🎶
+          </>
+        ) : (
+          "⬇ Dale Play a la señal EN VIVO ⬇"
+        )}
+      </h1>
+
+      {/* Animación de monitos bailando cuando está en reproducción */}
+      {isPlaying && (
+        <div className="flex space-x-2 my-2">
+          <Image
+            src="/bailarin1.gif"
+            alt="Monito bailando"
+            width={30}
+            height={30}
+          />
+          <Image
+            src="/bailarin1.gif"
+            alt="Monito bailando"
+            width={30}
+            height={30}
+          />
+          <Image
+            src="/bailarin1.gif"
+            alt="Monito bailando"
+            width={30}
+            height={30}
+          />
+        </div>
+      )}
+
       {/* Animación de ondas cuando está en reproducción */}
       <div className="h-8 flex items-end justify-center mb-2 space-x-1">
         {isPlaying ? (
