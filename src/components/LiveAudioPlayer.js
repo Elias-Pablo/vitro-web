@@ -13,10 +13,7 @@ export default function LiveAudioPlayer() {
       {/* Texto dinámico */}
       <h1 className="font-extrabold text-sm animate-bounce text-center">
         {isPlaying ? (
-          <>
-            🎶 Estás escuchando la transmisión en vivo de{" "}
-            <span className="text-yellow-400">"El Vitrola" 📻</span> 🎶
-          </>
+          <>🎶 Estás escuchando la transmisión en vivo de "El Vitrola" 📻 🎶</>
         ) : (
           "⬇ Dale Play a la señal EN VIVO ⬇"
         )}
@@ -28,20 +25,20 @@ export default function LiveAudioPlayer() {
           <Image
             src="/bailarin1.gif"
             alt="Monito bailando"
-            width={30}
-            height={30}
+            width={25}
+            height={25}
           />
           <Image
             src="/bailarin1.gif"
             alt="Monito bailando"
-            width={30}
-            height={30}
+            width={25}
+            height={25}
           />
           <Image
             src="/bailarin1.gif"
             alt="Monito bailando"
-            width={30}
-            height={30}
+            width={25}
+            height={25}
           />
         </div>
       )}
