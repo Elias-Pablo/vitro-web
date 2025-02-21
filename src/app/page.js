@@ -10,9 +10,9 @@ import {
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen flex flex-col items-center text-gray-900 dark:text-white px-4">
+    <div className="relative min-h-screen flex flex-col items-center text-gray-900 dark:text-white  max-h-screen px-4">
       {/* Header */}
-      <header className="flex flex-col items-center justify-center py-4">
+      <header className="flex flex-col items-center justify-center py-2 md:py-6 md:my-10">
         <Image
           src="/logo-vitro.png"
           alt="Radio El Vitróla"
@@ -22,8 +22,8 @@ export default function Home() {
       </header>
 
       {/* Sección de información */}
-      <section className="max-w-3xl text-center space-y-2 md:space-y-4">
-        <h2 className="text-2xl font-bold">
+      <section className="max-w-3xl text-center space-y-2 lg:text-base text-xs  md:space-y-4 flex flex-col items-center justify-center">
+        <h2 className="text-2xl font-bold ">
           El locutor número uno de la Región de O'higgins.
         </h2>
         <p>Años de trayectoria en Radio y Eventos Rancheros de la Región.</p>
@@ -91,8 +91,8 @@ export default function Home() {
           ⬇ Dale Play a la señal EN VIVO ⬇
         </h1>
         <LiveAudioPlayer />
-        <p className="text-sm mt-3">
-          © 2021 El Vitrola de Chile. Todos los derechos reservados. Powered by{" "}
+        <p className="text-xs mt-3">
+          © 2025 El Vitrola de Chile. Todos los derechos reservados. Powered by{" "}
           <a
             href="https://www.felpysoluciones.com/"
             target="_blank"
