@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: linear-gradient(120deg, #fab043, white);
+  --foreground: #fab043;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: linear-gradient(120deg, #fab043, #020202);
+    --foreground: #fab043;
   }
 }
 
@@ -18,4 +18,18 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  background-size: 400% 400%;
+  background-attachment: fixed; /* Fija el fondo en toda la pantalla */
+  animation: gradientAnimation 10s infinite linear alternate;
+}
+
+/* Animación del fondo */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }
