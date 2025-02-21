@@ -21,7 +21,7 @@ export default function LiveAudioPlayer() {
 
       {/* Animación de monitos bailando cuando está en reproducción */}
       {isPlaying && (
-        <div className="flex space-x-2 my-2">
+        <div className="flex space-x-2 my-1">
           <Image
             src="/bailarin1.gif"
             alt="Monito bailando"
