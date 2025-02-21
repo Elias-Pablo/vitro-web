@@ -11,7 +11,7 @@ export default function LiveAudioPlayer() {
   return (
     <div className="w-full max-w-4xl flex flex-col items-center">
       {/* Texto dinámico */}
-      <h1 className="font-extrabold text-sm animate-bounce text-center">
+      <h1 className="font-extrabold text-xs lg:text-lg animate-bounce text-center">
         {isPlaying ? (
           <>🎶 Estás escuchando la transmisión en vivo de "El Vitrola" 📻 🎶</>
         ) : (
